@@ -5,8 +5,11 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f6;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #100B00;
     color: #333;
 }
 
@@ -14,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0a2d3b;
+    background-color: #313036;
     color: white;
     padding: 10px 20px;
 }
@@ -58,14 +61,22 @@ header .cart-icon img {
 }
 
 .hero {
-    background-color: #0a2d3b;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(120deg, #00798C, #75B522, #100B00);
+    background-size: 300% 300%;
+    animation: gradient-shift 6s infinite ease-in-out;
     color: white;
-    padding: 100px 20px;
-    text-align: center;
+    padding: 150px 20px;
+    text-align: center left;
 }
 
 .hero h2 {
-    font-size: 36px;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
@@ -88,8 +99,43 @@ header .cart-icon img {
     background-color: #008ea1;
 }
 
+.sponsor-slider {
+  background-color: #f8f8f8;
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.slider-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-container {
+  display: flex;
+  width: max-content;
+  animation: 30s slide infinite linear;
+}
+
+.sponsor-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.sponsor-logo img {
+  max-width: 200px;
+  height: auto;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
 footer {
-    background-color: #202c35;
+    background-color: #313036;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -113,3 +159,24 @@ footer .footer-content ul li a {
 footer .footer-content ul li a:hover {
     color: #00b8d4;
 }
+
+@keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
