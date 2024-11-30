@@ -62,7 +62,7 @@ header nav ul li a:hover {
 .search-bar {
   display: flex;
   align-items: center;
-  background-color: #444444; /* Slightly lighter background for the search bar */
+  background-color: #444444;
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -72,12 +72,12 @@ header nav ul li a:hover {
   border: none;
   color: white;
   padding: 5px 10px;
-  width: 200px; /* Width of the search input */
+  width: 200px;
   border-radius: 5px;
 }
 
 .search-bar input::placeholder {
-  color: #bbb; /* Light gray placeholder text */
+  color: #bbb;
 }
 
 .search-bar button {
@@ -89,7 +89,7 @@ header nav ul li a:hover {
 }
 
 .search-bar button i {
-  font-size: 18px; /* Search icon size */
+  font-size: 18px;
 }
 
 .language-switcher {
@@ -105,6 +105,50 @@ header nav ul li a:hover {
 .language-switcher:hover {
   color: white;
   background-color: #444;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333; /* Match the dark navbar color */
+  color: white;
+  list-style: none;
+  padding: 0;
+  margin: 20px -15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  min-width: 120px;
+  z-index: 2;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu li {
+  border-bottom: 1px solid #444; /* Subtle divider lines */
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: white; /* Consistent white text */
+  padding: 10px 15px;
+  display: block;
+  font-size: 14px; /* Smaller font for dropdown items */
+  font-family: Arial, sans-serif; /* Match the website's font style */
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #444; /* Darker hover effect for better contrast */
+}
+
+.dropdown-menu li a:active {
+  background-color: #555; /* Slightly darker active state */
 }
 
 .register-btn {
@@ -160,11 +204,11 @@ header nav ul li a:hover {
   bottom: 5vh;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 15px;
+  font-size: 17px;
   color: white;
   font-weight: 500;
   margin: 0;
-  margin-bottom: -11vh;
+  margin-bottom: -9vh;
 }
 
 .hero .cta-button {
@@ -187,6 +231,26 @@ header nav ul li a:hover {
   position: relative;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.client-slider:before,
+.client-slider:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.client-slider:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.client-slider:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
 .slider-wrapper {
