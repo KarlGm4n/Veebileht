@@ -4,63 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style_ostukorv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <title>Ostukorv</title>
 </head>
 <body>
+    <header>
+        <div class="logo">
+          <a href="Avaleht.html"><img src="/src/pildid/Logo.png" alt="Logo" id="logo"></a>
+        </div>
+        <div class="header-items">
+          <nav>
+            <ul>
+              <li><a href="Ostukorv.html">Tooted</a></li>
+              <li><a href="#">Lahendused</a></li>
+              <li><a href="#">Materjalid</a></li>
+              <li><a href="#">Meist</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <input type="text" placeholder="Otsi..." aria-label="Search">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <div class="language-switcher">
+            <i class="fas fa-language"></i>
+          </div>
+          <a href="Login.html">
+            <div class="register-btn">Registreeri</div>
+          </a>
+        </div>
+    </header>
     <div class="wrapper">
         <h1>Ostukorv</h1>
         <div class="project">
             <div class="shop">
+                <div class="empty-cart-message" style="display: none;">
+                    <div class="box">
+                        <div class="content">
+                            <h3>Ostukorv on tühi!</h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="box">
-                    <img src="">
+                    <img src="pildid/NestMail.png">
                 <div class="content">
-                    <h3>Subscription 1</h3>
+                    <h3>NestMail</h3>
                     <h4>Hind (1 kuu): 20€</h4>
-                    <p class="unit">Kestus: <input value="2"></p>
-                    <p class="info"><span class="info-btn">v</span></p>
+                    <p class="unit">Kestus: 
+                        <select>
+                            <option value="1">1 kuu</option>
+                            <option value="3">3 kuud</option>
+                            <option value="6">6 kuud</option>
+                            <option value="12">12 kuud</option>
+                        </select>
+                    </p>
                     <p class="btn-area">
-                        <i class="fa fa-trash"></i>
-                        <span class="btn2">Eemalda</span>
+                        <span class="btn2">
+                            <img src="pildid/Trash_Icon.png" class="default">
+                            <img src="pildid/Trash_Icon_Hover.png" class="hover">
+                        </span>
                     </p>
                 </div>
                 </div>
                 <div class="box">
-                    <img src="">
+                    <img src="pildid/NestFlix.png">
                 <div class="content">
-                    <h3>Subscription 2</h3>
+                    <h3>NestFlix</h3>
                     <h4>Hind (1 kuu): 30€</h4>
-                    <p class="unit">Kestus: <input value="0"></p>
-                    <p class="info"><span class="info-btn">v</span></p>
+                    <p class="unit">Kestus: 
+                        <select>
+                            <option value="1">1 kuu</option>
+                            <option value="3">3 kuud</option>
+                            <option value="6">6 kuud</option>
+                            <option value="12">12 kuud</option>
+                        </select>
+                    </p>
                     <p class="btn-area">
-                        <i class="fa fa-trash"></i>
-                        <span class="btn2">Eemalda</span>
+                        <span class="btn2">
+                            <img src="pildid/Trash_Icon.png" class="default">
+                            <img src="pildid/Trash_Icon_Hover.png" class="hover">
+                        </span>
                     </p>
                 </div>
                 </div>
                 <div class="box">
-                    <img src="">
+                    <img src="pildid/NestStat.png">
                 <div class="content">
-                    <h3>Subscription 3</h3>
-                    <h4>Hind (1 kuu): 40€</h4>
-                    <p class="unit">Kestus: <input value="0"></p>
-                    <p class="info"><span class="info-btn">v</span></p>
+                    <h3>NestStat</h3>
+                    <h4>Hind (1 kuu): 10€</h4>
+                    <p class="unit">Kestus: 
+                        <select>
+                            <option value="1">1 kuu</option>
+                            <option value="3">3 kuud</option>
+                            <option value="6">6 kuud</option>
+                            <option value="12">12 kuud</option>
+                        </select>
+                    </p>
                     <p class="btn-area">
-                        <i class="fa fa-trash"></i>
-                        <span class="btn2">Eemalda</span>
+                        <span class="btn2">
+                            <img src="pildid/Trash_Icon.png" class="default">
+                            <img src="pildid/Trash_Icon_Hover.png" class="hover">
+                        </span>
                     </p>
                 </div>
                 </div>
             </div>
             <div class="right-bar">
-                <p><span>Hind</span> <span>40€</span></p>
+                <p><span>Hind</span> <span></span></p>
                 <hr>
-                <p><span>Maksud (20%)</span> <span>8€</span></p>
+                <p><span>Maksud (20%)</span> <span></span></p>
                 <hr>
-                <p><span>Kogusumma</span> <span>48€</span></p>
-                <a><i class="fa fa-shopping-cart"></i>Telli</a>
+                <p><span>Kogusumma</span> <span></span></p>
+                <a href="Login.html"><i class="fa fa-shopping-cart"></i>Telli</a>
                 <p><i class="order"><span>*Tellimiseks peate olema sisselogitud</span></i></p>
             </div>
         </div>
     </div>
+    <script src="js/ostukorv_script.js"></script>
 </body>
 </html>
