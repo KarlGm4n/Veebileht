@@ -2,13 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
     font-family: "Manrope", sans-serif;
-    background: linear-gradient(120deg, #00798C, #75B522, #313036);
-    animation: gradient-shift 6s infinite ease-in-out;
-    background-size: 300% 300%;
 }
 
 main {
