@@ -16,7 +16,14 @@ function updateTotal() {
     const boxes = document.querySelectorAll('.shop .box:not(.empty-cart-message .box)');
     boxes.forEach(box => {
         const priceText = box.querySelector('h4') ? box.querySelector('h4').innerText : '';
-        const price = parseFloat(priceText.replace('Hind (1 kuu): ', '').replace('€', '')) || 0;
+        let price = 0;
+
+        if (priceText.includes('Hind (1 kuu): ')) {
+            price = parseFloat(priceText.replace('Hind (1 kuu): ', '').replace('€', '')) || 0;
+        } else if (priceText.includes('Price (1 month): ')) {
+            price = parseFloat(priceText.replace('Price (1 month): ', '').replace('€', '')) || 0;
+        }
+
         const duration = parseInt(box.querySelector('select') ? box.querySelector('select').value : 1);
         total += price * duration;
     });
