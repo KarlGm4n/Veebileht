@@ -6,32 +6,76 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(/src/pildid/Chat_background.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: #333;
 }
 
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
+    background-color: #313036;
+    color: white;
+}
+header .logo {
+    display: flex;
+    align-items: center;
 }
 
-.navigation a{
-    position: relative;
-    font-size: 1.1em;
-    color: #fff;
+header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #00b8d4;
+}
+
+header .cart-icon img {
+    height: 30px;
+}
+
+main {
+    flex: 1;
+    padding-top: 80px; /* Push content below the fixed header */
+    padding-bottom: 100px; /* Add space for the footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d5d9d2;
+    width: 100%;
 }
 
 .wrapper {
@@ -39,11 +83,12 @@ header {
     width: 400px;
     height: 440px;
     background: transparent;
-    border: 2px solid #e5e5e5;
+    border: 4px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    backdrop-filter: blur(40px);
+    background-color: rgba(49, 48, 54, 0.7);
     box-shadow: 0 0 30px black;
     display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -60,6 +105,8 @@ header {
 }
 
 .wrapper .form-box.login {
+    width: 100%;
+    height: 440px;
     transition: .4s ease;
     transform: translateX(0);
 }
@@ -88,7 +135,7 @@ header {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #100B00;
     margin: 30px 0;
 }
 
@@ -120,7 +167,7 @@ header {
 
 .remember-forgot {
     font-size: .9em;
-    color: #0b151c;
+    color: white;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -128,23 +175,23 @@ header {
 }
 
 .remember-forgot label input {
-    accent-color: #101e29;
+    accent-color: #00b8d4;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #0b151c;
+    color: white;
     text-decoration: none;
 }
 
 .remember-forgot a:hover {
-    text-decoration: underline;
+    color: #008ea1;
 }
 
 .btn {
     width: 100%;
     height: 45px;
-    background: #0b151c;
+    background: #100B00;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -171,3 +218,44 @@ header {
 .login-register a:hover {
     text-decoration: underline;
 }
+
+footer {
+    background-color: #313036;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer .footer-content ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+footer .footer-content ul li {
+    margin: 5px 0;
+}
+
+footer .footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .footer-content ul li a:hover {
+    color: #00b8d4;
+}
+
+@keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
