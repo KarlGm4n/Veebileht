@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_shared.css">
     <link rel="stylesheet" href="css/style_login.css">
     <title>Login/Register</title>
 </head>
@@ -10,16 +11,29 @@
     
     <header>
         <div class="logo">
-            <a href="/src/Avaleht.html"><img src="/src/pildid/Logo.png" alt="Logo" id="logo"></a>
+          <a href="Avaleht.html"><img src="/src/pildid/Logo.png" alt="Logo" id="logo"></a>
         </div>
-        <nav>
+        <div class="header-items">
+          <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+              <li><a href="Ostukorv.html">Tooted</a></li>
+              <li><a href="#">Lahendused</a></li>
+              <li><a href="#">Materjalid</a></li>
+              <li><a href="#">Meist</a></li>
+              <li><a href="#">Kontakt</a></li>
             </ul>
-        </nav>
+          </nav>
+          <div class="search-bar">
+            <input type="text" placeholder="Otsi..." aria-label="Search">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <div class="language-switcher">
+            <i class="fas fa-language"></i>
+          </div>
+          <a href="Login.html">
+            <div class="register-btn">Registreeri</div>
+          </a>
+        </div>
     </header>
     <main>
         <div class="wrapper">

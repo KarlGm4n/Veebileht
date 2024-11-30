@@ -4,69 +4,11 @@
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+body{
     font-family: "Manrope", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    color: #333;
-}
-
-header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 5px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #313036;
-    color: white;
-}
-header .logo {
-    display: flex;
-    align-items: center;
-}
-
-header .logo img {
-    height: 50px;
-    margin-left: 0;
-    padding-left: 0;
-    flex-grow: 0;
-}
-
-header h1 {
-    font-size: 24px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover {
-    color: #00b8d4;
-}
-
-header .cart-icon img {
-    height: 30px;
+    background: linear-gradient(120deg, #00798C, #75B522, #313036);
+    animation: gradient-shift 6s infinite ease-in-out;
+    background-size: 300% 300%;
 }
 
 main {
@@ -220,35 +162,6 @@ main {
 
 .login-register a:hover {
     text-decoration: underline;
-}
-
-footer {
-    background-color: #313036;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    margin-top: auto;
-}
-
-footer .footer-content ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-footer .footer-content ul li {
-    margin: 5px 0;
-}
-
-footer .footer-content ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-footer .footer-content ul li a:hover {
-    color: #00b8d4;
 }
 
 @keyframes gradient-shift {
