@@ -1,3 +1,12 @@
+/* Üldine */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+
 /* Header */
 header {
     display: flex;
@@ -117,7 +126,7 @@ header nav ul li a:hover {
 }
 
 
-/* Header */
+/* Footer */
 footer {
   background-color: #313036;
   color: white;
