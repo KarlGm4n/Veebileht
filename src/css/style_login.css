@@ -1,49 +1,27 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
+main {
+    flex: 1;
+    padding-top: 80px; /* Push content below the fixed header */
+    padding-bottom: 100px; /* Add space for the footer */
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: url(/src/pildid/Chat_background.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: #ebebeb;
     width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-}
-
-.navigation a{
-    position: relative;
-    font-size: 1.1em;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
 }
 
 .wrapper {
     position: relative;
     width: 400px;
     height: 440px;
-    background: transparent;
-    border: 2px solid #e5e5e5;
+    border: 4px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-    backdrop-filter: blur(40px);
+    background: linear-gradient(120deg, #00798C, #75B522, #100B00);
+    background-size: 300% 300%;
+    animation: gradient-shift 9s infinite ease-in-out;
     box-shadow: 0 0 30px black;
     display: flex;
+    color: white;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -60,6 +38,8 @@ header {
 }
 
 .wrapper .form-box.login {
+    width: 100%;
+    height: 440px;
     transition: .4s ease;
     transform: translateX(0);
 }
@@ -88,7 +68,7 @@ header {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #100B00;
     margin: 30px 0;
 }
 
@@ -120,7 +100,7 @@ header {
 
 .remember-forgot {
     font-size: .9em;
-    color: #0b151c;
+    color: white;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -128,23 +108,23 @@ header {
 }
 
 .remember-forgot label input {
-    accent-color: #101e29;
+    accent-color: #00b8d4;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #0b151c;
+    color: white;
     text-decoration: none;
 }
 
 .remember-forgot a:hover {
-    text-decoration: underline;
+    color: #008ea1;
 }
 
 .btn {
     width: 100%;
     height: 45px;
-    background: #0b151c;
+    background: #100B00;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -171,3 +151,4 @@ header {
 .login-register a:hover {
     text-decoration: underline;
 }
+
