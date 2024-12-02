@@ -1,16 +1,28 @@
 
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    margin: 0;
+    align-items: center;
+}
+
 main {
     flex: 1;
-    padding-top: 80px; /* Push content below the fixed header */
-    padding-bottom: 100px; /* Add space for the footer */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ebebeb;
-    width: 100%;
+    min-height: calc(100vh - 10vh);
 }
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
     position: relative;
     width: 400px;
     height: 440px;
@@ -20,10 +32,7 @@ main {
     background-size: 300% 300%;
     animation: gradient-shift 9s infinite ease-in-out;
     box-shadow: 0 0 30px black;
-    display: flex;
     color: white;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
     transition: .2s ease;
 }
