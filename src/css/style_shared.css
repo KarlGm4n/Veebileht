@@ -9,7 +9,6 @@
 
 /* Header */
 header {
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,7 +172,6 @@ header nav ul li a:hover {
 
 /* Footer */
 footer {
-  width: 100vw;
   background-color: #313036;
   color: white;
   padding: 20px 0;
