@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style_shared.css">
+    <link rel="stylesheet" href="/src/css/style_login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/src/pildid/favicon.png">
+    <title>Login/Register</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+          <a href="/src/EE-html/Avaleht.html"><img src="/src/pildid/Logo.png" alt="Logo" id="logo"></a>
+        </div>
+        <div class="header-items">
+          <nav>
+            <ul>
+              <li><a href="/src/EE-html/Ostukorv.html">Ostukorv</a></li>
+              <li><a href="#">Lahendused</a></li>
+              <li><a href="#">Materjalid</a></li>
+              <li><a href="#">Meist</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <input type="text" placeholder="Otsi..." aria-label="Search">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <div class="language-switcher">
+            <i class="fas fa-language dropdown-btn"></i>
+            <ul class="dropdown-menu">
+              <li><a href="/src/EN-html/Login_en.html" data-lang="en">Inglise</a></li>
+              <li><a href="/src/EE-html/Login.html" data-lang="ee">Eesti</a></li>
+            </ul>
+          </div>
+          <script src="/src/js/script_avaleht.js"></script>
+          <a href="/src/EE-html/Login.html">
+            <div class="register-btn">Logi sisse</div>
+          </a>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>Logi sisse</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="text" required>
+                        <label>Kasutajanimi või email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="password" required>
+                        <label>Salasõna</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox"> Pea mind meeles
+                        </label>
+                        <a href="#">Unustasid parooli?</a>
+                    </div>
+                    <button type="submit" class="btn">Logi sisse</button>
+                    <div class="login-register">
+                        <p>Pole kasutajat? <a href="#" class="register-link">Registreeri</a></p>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="form-box register">
+                <h2>Registreeri</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="text" required>
+                        <label>Kasutajanimi</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="password" required>
+                        <label>Salasõna</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"></span>
+                        <input type="password" required>
+                        <label>Salasõna uuesti</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> 
+                            Nõustun <a href="#" class="terms-conditions">Tingimuste & Reeglitega</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Registreeri</button>
+                    <div class="login-register">
+                        <p>Juba omad kontot? <a href="#" class="login-link">Logi sisse</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MemberNest. Kõik õigused kaitstud.</p>
+            <ul>
+                <li><a href="mailto:contact@membernest.com">Email: kontakt@membernest.com</a></li>
+                <li><a href="tel:+1234567890">Telefon: +372 5675 8290</a></li>
+                <li><a href="#">Privaatsuspoliitika</a></li>
+                <li><a href="#">Tingimused</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/src/js/login_script.js"></script>
+</body>
+</html>
