@@ -102,6 +102,50 @@ header nav ul li a:hover {
   background-color: #444;
 }
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333; /* Match the dark navbar color */
+  color: white;
+  list-style: none;
+  padding: 0;
+  margin: 20px -15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  min-width: 120px;
+  z-index: 2;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu li {
+  border-bottom: 1px solid #444; /* Subtle divider lines */
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  color: white; /* Consistent white text */
+  padding: 10px 15px;
+  display: block;
+  font-size: 14px; /* Smaller font for dropdown items */
+  font-family: Arial, sans-serif; /* Match the website's font style */
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #444; /* Darker hover effect for better contrast */
+}
+
+.dropdown-menu li a:active {
+  background-color: #555; /* Slightly darker active state */
+}
+
 .register-btn {
   background-color: #75b522bb;
   color: white;
