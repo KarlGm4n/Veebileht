@@ -1,4 +1,4 @@
-// Alljärgnev JavaScripti kood on koostatud Microsoft Copiloti (2024) tekstiroboti poolt.
+// Alljärgnev JavaScripti kood on genereeritud Microsoft Copiloti (2024) tekstiroboti poolt.
 // Kommenteeritud ja kohandatud autori poolt.
 
 // Lisame igale prügikasti nupule .btn2 klikkimise sündmuse kuulaja
